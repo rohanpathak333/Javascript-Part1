@@ -37,3 +37,28 @@ console.log(typeof bigNumber) //bigInt
 console.log(typeof outsideTemp) //object
 console.log(typeof heros) //object
 console.log(typeof id) //symbol
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "rohanpathakdotcom"
+let anothername = myYoutubename
+ anothername = "rohaanverse"
+
+console.log(myYoutubename);
+console.log(anothername); 
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}// this will store in heap memory and will give reference
+
+let userTwo = userOne //it will get reference 
+
+userTwo.email = "rohan@gmail.com"
+
+console.log(userOne.email); //rohan@gmail.com
+console.log(userTwo.email); //rohan@gmail.com 
